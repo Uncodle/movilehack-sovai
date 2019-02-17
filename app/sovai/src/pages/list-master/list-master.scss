@@ -1,0 +1,45 @@
+page-list-master {
+    .main-logo{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 25%;
+    }
+    .text-eventos{
+        color: #757474;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0 30px;
+    }
+    .text-eventos span{
+        color: #FC7728;
+    }
+    .event-title{
+        position: absolute;
+        top: 25%;
+        color: #ffff;
+        left: 7%;
+        font-size: 18px;
+    }
+    .filtro-foto{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(to right, #502158, #502158, transparent);
+    }
+    .relative-foto{
+        height: 90px;
+        position: absolute;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: auto 10px;
+    
+    }
+    .photo-container{
+        position: relative;
+        height: 95px;
+        margin-bottom: 5px;
+    }
+}

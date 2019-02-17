@@ -1,0 +1,56 @@
+
+
+<ion-content>
+  <div class="logo-position">
+    <img class="main-logo" src="../assets/img/sovai-cor.png" >
+  </div>
+  <form (submit)="doSignup()">
+    <ion-list>
+
+      <ion-item>
+        <ion-input type="text" placeholder="Primeiro Nome" [(ngModel)]="account.firstName" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-input type="text" placeholder="Último Nome" [(ngModel)]="account.lastName" name="name"></ion-input>
+        </ion-item>
+
+      <ion-item>
+        <ion-input type="text" placeholder="CPF" [(ngModel)]="account.clientCpf" name="cpf"></ion-input>
+      </ion-item>
+<!--
+      <ion-item>
+        <ion-input type="email" placeholder="Email" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+    -->
+      <ion-item>
+        <ion-input type="text" placeholder="Numero do cartao" [(ngModel)]="account.cardNumber" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="text" placeholder="Mês de vencimento" [(ngModel)]="account.expirationMonth" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="text" placeholder="Ano de vencimento" [(ngModel)]="account.expirationYear" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="text" placeholder="Codigo de verificação" [(ngModel)]="account.securityNumber" name="name"></ion-input>
+      </ion-item>
+<!--
+      <ion-item>
+        <ion-input type="password" placeholder="Senha" [(ngModel)]="account.password" name="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-input type="password" placeholder="Confirme Senha" [(ngModel)]="account.password_validate" name="password-validate"></ion-input>
+        </ion-item>
+-->
+      <div padding>
+        <button ion-button color="primary" block>Continuar</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

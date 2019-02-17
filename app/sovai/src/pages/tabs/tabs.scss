@@ -1,0 +1,35 @@
+page-tabs {
+    .carrinho-de-compras{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #ffff;
+        z-index: 99999;
+        position: absolute;
+        bottom: 20px;
+        left: 39%;
+        box-shadow: 0 0 25px 0 #ccc;
+    }
+    .icon{
+        position: absolute;
+        margin-left: 8px;
+        width: 30px;
+        margin-top: 12px;
+    }
+    .tabbar{
+        background: #6fe3e2 !important;
+        border-top: none !important; 
+    }
+    .tabs-md .tabbar{
+        background: #6fe3e2;
+    }
+    .tab-button[aria-selected=true] .tab-button-icon, .tab-button{
+        color: #fff !important;
+    }
+    .tabs-ios .tab-button-icon{
+        color: #fff !important;
+    }
+    .tabs-md .tab-button-icon{
+        color: #fff !important;
+    }
+}

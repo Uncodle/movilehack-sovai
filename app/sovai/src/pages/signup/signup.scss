@@ -1,0 +1,24 @@
+page-signup {
+    .main-logo{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        margin: 20px auto;
+        margin-left: 25%;
+        
+
+    }
+    .logo-position{
+        width: 100%;
+        height: auto;
+    }
+    .list-ios > .item-block:first-child {
+        border-top: none !important;
+    }
+    .button-ios-primary, 
+    .button-md-primary, 
+    .button-wp-primary{
+     background: #6fe3e2;
+     border-radius: 50px;
+    }
+}

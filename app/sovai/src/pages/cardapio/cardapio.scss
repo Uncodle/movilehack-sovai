@@ -1,0 +1,54 @@
+.img-drink{
+    margin: 20px 40% 0 40%;
+}
+.title-page{
+    text-align: center;
+    color: #502158;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+
+.text-eventos-cardapio{
+    color: #757474;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 30px;
+}
+.text-eventos-cardapio span{
+    color: #FC7728;
+}
+.event-title-cardapio{
+    position: absolute;
+    color: #ffff;
+    left: 31px;
+    font-size: 18px;
+    bottom: 3px;
+    text-align: center;
+}
+.filtro-foto-cardapio{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, #502158 35%, transparent);
+}
+.relative-foto-cardapio{
+    height: 134px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: auto;
+
+}
+.photo-container-cardapio{
+    position: relative;
+    height: 134px;
+    margin-bottom: 5px;
+    width: 45%;
+    float: left;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+

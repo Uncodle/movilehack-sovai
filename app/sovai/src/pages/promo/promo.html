@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <img src="../assets/img/sovai-cor.png" />
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<br/><br/><br/>
+<ion-list>
+
+    <ion-item class="item-cardapio">
+        <ion-label>Cerveja <div class="maisemenos"><span (click)="mais()" > +</span><input [(ngModel)]="qtd"> <span (click)="menos()">-</span></div></ion-label>
+        
+    </ion-item >
+        <ion-item class="item-cardapio">
+    <ion-label>Porção de batata <div class="maisemenos"><span (click)="mais2()" > +</span><input [(ngModel)]="qtd2"> <span (click)="menos2()">-</span></div></ion-label>
+        </ion-item>
+    <ion-item class="item-cardapio">
+        <ion-label>Filé de pescada <div class="maisemenos"><span (click)="mais3()" > +</span><input [(ngModel)]="qtd3"> <span (click)="menos3()">-</span></div></ion-label>
+    </ion-item>
+    <ion-item class="item-cardapio">
+        <ion-label>GIN <div class="maisemenos"><span (click)="mais4()" > +</span><input [(ngModel)]="qtd4"> <span (click)="menos4()">-</span></div></ion-label>
+    </ion-item>
+        <ion-item class="item-cardapio">
+    <ion-label>Hamburguer <div class="maisemenos"><span (click)="mais5()" > +</span><input [(ngModel)]="qtd5"> <span (click)="menos5()">-</span></div></ion-label>
+        </ion-item>
+
+
+        <ion-item class="total-cardapio">
+            <ion-label> ${{total}} </ion-label>
+        </ion-item>
+
+
+    
+</ion-list>

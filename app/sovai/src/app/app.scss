@@ -1,0 +1,37 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+ion-icon {
+    &[class*="custom-"] {
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+        $sz: 20px;
+        width: $sz;
+        height: $sz;
+    } // custom icons
+    &[class*="pin"][ng-reflect-is-active="true"] {
+        background: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjs85jsisLgAhXpEbkGHYERBgEQjRx6BAgBEAU&url=http%3A%2F%2Fwww.cardia.com%2Fasdinfo.html&psig=AOvVaw0A-qn_Y7GdMIiyQL_ldFwL&ust=1550469424686530") no-repeat 50% 50%;
+        background-size: contain;
+    }//in case of active
+    &[class*="pin"][ng-reflect-is-active="false"] {
+        background: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjs85jsisLgAhXpEbkGHYERBgEQjRx6BAgBEAU&url=http%3A%2F%2Fwww.cardia.com%2Fasdinfo.html&psig=AOvVaw0A-qn_Y7GdMIiyQL_ldFwL&ust=1550469424686530") no-repeat 50% 50%;
+        background-size: contain;
+    }//in case of inactive
+    &[class*="stars"] {
+        background: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjs85jsisLgAhXpEbkGHYERBgEQjRx6BAgBEAU&url=http%3A%2F%2Fwww.cardia.com%2Fasdinfo.html&psig=AOvVaw0A-qn_Y7GdMIiyQL_ldFwL&ust=1550469424686530") no-repeat 50% 50%;
+        background-size: contain;
+    }
+}

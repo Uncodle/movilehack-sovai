@@ -1,0 +1,83 @@
+page-welcome {
+
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+
+  .splash-info {
+    position: relative;
+    z-index: 2;
+    margin-top: 64px;
+    text-align: center;
+  }
+  .splash-logo {
+    margin: auto 40px;
+    background: url('../assets/img/logo-sovai-branco.png') no-repeat transparent;
+    background-size: 100%;
+    width: auto;
+    height: 128px;
+  }
+  .splash-intro {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 80%;
+    margin: auto;
+  }
+  button.login {
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    color: #333;
+
+    &.activated {
+      background-color: rgb(220, 220, 220);
+    }
+  }
+  .signup-home{
+    text-align: center;
+  }
+  .signup-home a{
+    cursor: pointer;
+  }
+  .content{
+    background-image: url(../assets/img/bg-inicio.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .scroll-content{
+    background-color: rgba(252, 119, 40, 0.6);
+  }
+  .button-ios-primary, 
+  .button-md-primary, 
+  .button-wp-primary{
+    background: #6fe3e2;
+    border-radius: 50px;
+  }
+  .bt-cadastro{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-weight: 300 !important;
+    margin-top: 15px;
+  }
+  .item-ios, .item-md, .item-wp{
+    background: transparent;
+    color: #fff !important;
+  }
+  .list-ios > .item-block:first-child {
+    border-top: none !important;
+  }
+  .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, 
+  .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+    border-bottom: #fff !important;
+    box-shadow: inset 0 -1px 0 0 #fff;
+  }
+  .item-wp.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .text-input, 
+  .item-wp.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .text-input {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid#fff !important;
+  }
+}
