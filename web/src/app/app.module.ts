@@ -5,25 +5,29 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { DashboardClientComponent } from './dashboard-client/dashboard-client.component';
-import { LoginComponent } from './dashboard-client/login/login.component';
-import { NavComponent } from './dashboard-client/nav/nav.component';
-import { OrdersComponent } from './dashboard-client/orders/orders.component';
+import { LoginComponent } from './login/login.component';
+import { NavComponent } from './nav/nav.component';
+import { OrdersComponent } from './orders/orders.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes = [
-  { path: '', component: AppComponent },
-  { path: 'admin/dashboard', component: DashboardClientComponent },
-  { path: 'admin/login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'dashboard', component: DashboardComponent,
+    children: [
+      { path: '', component: OrdersComponent },
+      { path: 'movimento', component: OrdersComponent },
+      { path: 'relatorios', component: OrdersComponent },
+    ]
+  }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardClientComponent,
     LoginComponent,
-    DashboardClientComponent,
     NavComponent,
-    OrdersComponent
+    OrdersComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

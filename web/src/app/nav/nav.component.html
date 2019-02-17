@@ -1,0 +1,42 @@
+<ul id="slide-out" class="sidenav">
+  <li>
+      <div class="user__view">
+          <a class="user__picture" [routerLink]="['/profile/']">
+            <img src="../../assets/images/icons/roberto-justus.jpg">
+          </a>
+          <a href="#name"><span class="user__name">Roberto</span></a>
+      </div>
+  </li>
+
+  <li>
+      <a class="waves-effect" [routerLink]="['/dashboard/']">
+          <img width="50" src="../../assets/images/icons/filter.svg">
+          <span class="menu__label">Dashboard</span>  
+        </a>
+  </li>
+
+  <li>
+    <a class="waves-effect" [routerLink]="['/dashboard/movimento/']">
+        <img width="50" src="../../assets/images/icons/graph.svg">
+        <span class="menu__label">Movimento</span>
+    </a>
+  </li>
+  
+  <li>
+      <a class="waves-effect" [routerLink]="['/dashboard/relatorios/']">
+          <img width="50" src="../../assets/images/icons/docs.svg">
+          <span class="menu__label">Relatórios</span>    
+        </a>
+  </li>
+  
+  <li>
+      <a class="waves-effect" [routerLink]="['/dashboard/logout/']">
+          <img width="50" src="../../assets/images/icons/close.svg">
+          <span class="menu__label">Sair</span> 
+      </a>
+  </li>
+</ul>
+
+<nav class="menu__mobile">
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+</nav>
