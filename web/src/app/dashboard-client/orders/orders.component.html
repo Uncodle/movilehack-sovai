@@ -1,0 +1,25 @@
+<table class="highlight centered">
+    <thead>
+      <tr>
+          <th>Horário</th>
+          <th>Status</th>
+          <th>Pedido</th>
+          <th>Nome</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td> {{ order.date }}</td>
+        <td>
+          <span>{{ order.status }}</span>
+        </td>
+        <td>
+            <div *ngFor="let item of order.items">
+              {{ item.name }}
+            </div>
+        </td>
+        <td>{{ order.name }}</td>
+      </tr>
+    </tbody>
+  </table>

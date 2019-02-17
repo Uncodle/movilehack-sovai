@@ -1,0 +1,44 @@
+<section class="login__page">
+    <div class="container">
+       <div class="row">
+            <div class="col s12 push-m3 m6">
+                <div class="row">
+                    <form class="card" [formGroup]="form" novalidate (ngSubmit)="login()"> 
+                        <div class="card-title center-align">
+                            <img width="200" src="../../../assets/images/logo-branco.png">
+                        </div>
+   
+                        <div class="card-content">
+                                <div class="input-field">
+                                <input name="username" formControlName="username" placeholder="Usuário" type="text">
+                                <label for="username">Usuário</label>
+    
+                                    <div class="field__messages">
+                                        <div *ngIf="this.form.get('username').value == '' && this.form.get('username').touched">
+                                            <span class="message message__error">O campo é obrigatório</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="input-field">
+                                <input name="password" formControlName="password" placeholder="Senha" type="password">
+                                <label for="password">Senha</label>
+    
+                                    <div class="field__messages">
+                                        <div *ngIf="form.get('password').value == '' && form.get('password').touched">
+                                            <span class="message message__error">O campo é obrigatório</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="input-field">
+                                    <button class="btn waves-effect waves-light">Entrar</button>
+                                    <a class="btn btn-reverse" href="">Não tenho cadastro</a>
+                                </div>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+       </div>
+    </div>
+</section>

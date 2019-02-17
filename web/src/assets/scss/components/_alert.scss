@@ -1,0 +1,25 @@
+.alert__success {
+    color: #fff;
+    padding: 4px 8px;
+    display: inline-block;
+    background-color: tomato;
+}
+
+.alert {
+    
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    
+    &.alert__error {
+        background-color: tomato;
+    }
+    
+    &.alert__success {
+        background-color: rgb(26,175,26);
+    }  
+}
