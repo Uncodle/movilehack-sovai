@@ -19,13 +19,8 @@ export class OrdersComponent implements OnInit {
 
   ngOnInit() {
     this.ordersService.getOrders()
-    .then( ( orders: Order[]) => {
+    .subscribe( ( orders: Order[] ) => {
       this.orders = orders;
-      console.log(this.orders);
-    })
-    .catch( (error: any ) => {
-      console.log( error );
-    })
-  }
-  
+    });
+  } 
 }

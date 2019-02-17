@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     } else {
       this.loginService.finishLogin( this.form.get('username').value, this.form.get('password').value )
       .subscribe( ( response : any ) => {
-        console.log( response );
+         window.location.href = '/dashboard';
       })
     }
 

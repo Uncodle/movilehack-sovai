@@ -1,0 +1,60 @@
+<section class="dashboard__statistics">
+    <div class="row">
+
+        <h1>Estatísticas</h1>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card__estimate">853</span>     
+              <span class="card__label">mensal</span>          
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+             <div class="card">
+                <div class="card-content">
+                  <span class="card__estimate">240</span>     
+                  <span class="card__label">semanal</span>          
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+              <div class="card-content">
+                <span class="card__estimate">19</span>     
+                <span class="card__label">diário</span>          
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dashboard__charts">
+
+    <h1>Relatórios</h1>
+
+    <div class="row">
+      <div class="col s12">
+          <canvas baseChart
+            [data]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [chartType]="lineChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+      </div> 
+    </div>
+    <div class="row">
+      <div class="col s12 ">
+          <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+</section>

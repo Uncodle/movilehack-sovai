@@ -1,21 +1,15 @@
-.alert__success {
-    color: #fff;
-    padding: 4px 8px;
-    display: inline-block;
-    background-color: tomato;
-}
-
 .alert {
     
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     padding: 8px 12px;
     border-radius: 4px;
     display: inline-block;
-    letter-spacing: .4px;
+    letter-spacing: .8px;
     text-transform: uppercase;
     
-    &.alert__error {
+    &.alert__warning {
+        font-weight: normal;
         background-color: tomato;
     }
     

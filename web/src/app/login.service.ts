@@ -17,9 +17,8 @@ export class LoginService {
     let headers: Headers  = new Headers()
     const URL_API = 'http://localhost:3000';
 
-    return this.http.post(
-      `${ URL_API }/users`,
-      JSON.stringify(`?username=${ username }&password=${ password }`),
+    return this.http.get(
+      `${ URL_API }/users?username=${ username }&password=${ password }`,
       new RequestOptions({ headers: headers })
     )
     .pipe(

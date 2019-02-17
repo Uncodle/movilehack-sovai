@@ -12,7 +12,7 @@
       <tr *ngFor="let order of orders">
         <td> {{ order.date }}</td>
         <td>
-          <span>{{ order.status }}</span>
+          <span [className]="order.status === 'Pendente' ? 'alert alert__warning' : 'alert alert__success' ">{{ order.status }}</span>
         </td>
         <td>
             <div *ngFor="let item of order.items">

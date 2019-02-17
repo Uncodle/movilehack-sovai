@@ -70,11 +70,10 @@
             left: -55%;
             width: 200px;
             position: absolute;
-            transition: all .3s ease-in-out;
+            transition: all .2s;
 
             &:hover {
-               transform: scale(1.1);
-               transform: rotate(-35deg);
+               transform: scale(1.2);
             }
         }
     }
@@ -88,6 +87,7 @@
     display: none;
     background-color: #fd7728;
 }
+
 
 @media(min-width: 768px){
     .sidenav {

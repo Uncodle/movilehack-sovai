@@ -1,0 +1,36 @@
+.dashboard__statistics {
+    .card {
+        border-radius: 30px;
+        transition: all .3s;
+        background-color: #502158;
+
+        &:hover {
+            transform: translateY(8px);
+            background-color: lighten(#502158, 5%);
+        }
+    }
+
+    .card__estimate,
+    .card__label  {
+        font-weight: 300;
+        display: block;
+        color: #fff;
+        text-align: center;
+    }
+
+    .card__estimate {
+        font-size: 62px;
+    }
+
+    .card__label {
+        font-size: 22px;
+        letter-spacing: .4px;
+        text-transform: uppercase;
+    }   
+}
+
+.dashboard__charts {
+    canvas {
+        margin: 35px 0;
+    }
+}
