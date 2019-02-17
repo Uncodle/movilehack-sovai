@@ -16,6 +16,7 @@ A plataforma da "Só Vai" é uma wallet para fazer pagamentos em eventos sem uso
     ** Dados persistidos na base de dados.
     
     Payload (Exemplo): 
+    
     ```
     {
 	    "clientCpf": "46209635857",
@@ -28,12 +29,13 @@ A plataforma da "Só Vai" é uma wallet para fazer pagamentos em eventos sem uso
 	    "firstName": "gabriel",
 	    "lastName": "dantas"
    }
-    ```
+   ```
     
   * POST = {host}/wavy/validateSms - Gera uma mensagem com um codigo, para validaçao da compra.
     ** Consome api da Wavy para disparar as mensagens.
     
     Payload (Exemplo): 
+    
     ```
     {
       "cod" : "123",
@@ -42,9 +44,11 @@ A plataforma da "Só Vai" é uma wallet para fazer pagamentos em eventos sem uso
 	    "carrier": "TIM"
     }
     ```
+   
    * POST = {host}/wallet/pay - Realiza o pagamento efetivo da compra pela Zoop.
     
     Payload (Exemplo): 
+    
     ```
       {    
           "amount": 100,
