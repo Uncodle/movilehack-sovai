@@ -1,0 +1,19 @@
+.alert {
+    
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    
+    &.alert__warning {
+        font-weight: normal;
+        background-color: tomato;
+    }
+    
+    &.alert__success {
+        background-color: rgb(26,175,26);
+    }  
+}

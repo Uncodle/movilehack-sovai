@@ -1,0 +1,101 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+}
+
+.card {
+    color: #fff;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.btn {
+    font-size: 16px;
+    height: 60px;
+    width: 210px;
+    display: block;
+    margin: 25px auto 0;
+    border-radius: 60px;
+    text-transform: initial;
+    background-color: #54C9D1;
+
+    &-reverse {
+        box-shadow: none;
+        line-height: 60px;
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+}
+
+.login__page {
+    height: 100vh;
+    position: relative;
+    padding-top: 25vh;
+    background: {
+        size: cover;
+        attachment: fixed;
+        position: center bottom;
+        image: url(../../assets/images/bg.jpg);
+    }
+
+    &:before {
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        content: "";
+        position: absolute;
+        background: #FC7026;
+        opacity: .5;
+    }
+}
+
+.message {
+    top: 0;
+    right: 15px;
+    margin-top: 10px;
+    position: absolute;
+
+    &.message__error {
+        color: tomato;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        background-color: tomato;
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 4px;
+    }
+}
+
+.input-field {
+    & > label,
+    & > input[type="text"],
+    input[type="password"] {
+        color: #fff; 
+        border-bottom-color: #fff;
+    }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }

@@ -1,0 +1,21 @@
+table {
+    color: #756474;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+table thead tr {
+    border-bottom: 1px solid #756474;
+}
+
+table th {
+    font-weight: 300;
+}
+
+table tr {
+    border-bottom-width: 0;
+}
+
+table tbody tr td:nth-child(2n){
+    background-color: #F8F8F8;
+}

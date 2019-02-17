@@ -1,0 +1,50 @@
+.dashboard__page {
+    height: 100vh;
+    background-color: #757474;
+}
+
+.dashboard__page main {
+    height: 100vh;
+    padding: 45px;
+    background-color: #fff;
+}
+
+.dashboard__statistics {
+
+    .card {
+        color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #502158;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(4px);
+            background-color: lighten(#502158, 3%);
+        }
+    }
+
+    .statistic__number {
+        display: block;
+        font-size: 52px;
+        font-weight: 300;
+    }
+
+    .statistic__label {
+        font-size: 18px;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+    }
+}
+
+.dashboard__charts {
+    margin: 35px 0;
+}
+
+@media(min-width: 768px){
+    .dashboard__page {
+        main {
+            margin-left: 145px;
+        }
+    }
+}
