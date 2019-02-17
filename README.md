@@ -28,7 +28,7 @@ A plataforma da "Só Vai" é uma wallet para fazer pagamentos em eventos sem uso
 	    "securityNumber" : "133",
 	    "firstName": "gabriel",
 	    "lastName": "dantas"
-   }
+    }
    ```
     
   * POST = {host}/wavy/validateSms - Gera uma mensagem com um codigo, para validaçao da compra.
