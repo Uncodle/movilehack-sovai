@@ -2,7 +2,7 @@
 
 A plataforma da "Só Vai" é uma wallet para fazer pagamentos em eventos sem uso de qualquer tipo de cartão na hora do evento.
 
-## Tecnologias
+## Tecnologias -  Back end
   
   * Java Spring Boot;
   * Mongo DB;
@@ -30,7 +30,7 @@ A plataforma da "Só Vai" é uma wallet para fazer pagamentos em eventos sem uso
 	    "lastName": "dantas"
     }
    ```
-    
+  
   * POST = {host}/wavy/validateSms - Gera uma mensagem com um codigo, para validaçao da compra.
     ** Consome api da Wavy para disparar as mensagens.
     
